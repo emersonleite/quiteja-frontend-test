@@ -86,7 +86,7 @@ async function updateUser() {
 
     showToast("Usuário atualizado com sucesso!", "success");
 
-    router.push({ name: "users" });
+    router.go(-1);
   } catch (error) {
     showToast("Erro ao salvar as alterações.", "error");
   } finally {
