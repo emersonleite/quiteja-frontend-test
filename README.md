@@ -77,4 +77,4 @@ Ao terminar o projeto, você pode enviar o link do seu repositório (Deixar o me
 
    - Uma das melhorias implementadas com o Pinia foi o sistema de [cache](src/store/cache.ts), que reduz solicitações desnecessárias à API, otimizando a performance e a experiência do usuário. Isso evita que sejam feitas chamadas a api através de sucessivos reloads forçados (F5) ou transições de páginas muito rápidas. O tempo limite especificado foi de 5s.
 
-   - O deploy do sistema foi feito na Vercel. O link é [projeto](https://vercel.com/emersonleites-projects/quiteja-frontend-test/).
+   - O deploy do sistema foi feito na Vercel. O link é [projeto](https://quiteja-frontend-test-qx9r6gkbw-emersonleites-projects.vercel.app/).
