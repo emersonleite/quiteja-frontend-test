@@ -17,7 +17,7 @@ function repositories($api: AxiosInstance) {
   );
 
   return {
-    company: User($api),
+    user: User($api),
   };
 }
 
