@@ -31,6 +31,8 @@
               </td>
               <td>
                 <router-link
+                  style="color: #1b5f6b"
+                  class="text-decoration-none text-subtitle-2"
                   :to="{ name: 'userById', params: { id: user.id } }"
                 >
                   {{ user.firstName }}
@@ -123,6 +125,7 @@ onMounted(async () => {
     return;
   }
   users.value = useCache.users;
+  total.value = useCache.totalItems;
 });
 
 watch(page, () => {
@@ -144,11 +147,11 @@ async function getAllUsers() {
     });
 
     users.value = data;
+    total.value = totalItems;
 
     useCache.setUsers(data);
     useCache.setTime(new Date().getTime());
-
-    total.value = totalItems;
+    useCache.setTotalItems(totalItems);
   } catch (error) {
     console.error("Não foi possível obter a lista de usuários.", error);
   } finally {
