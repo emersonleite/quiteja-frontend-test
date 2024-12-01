@@ -17,4 +17,12 @@ export default ($api: AxiosInstance) => ({
   async removeUser(id: string): Promise<void> {
     await $api.delete(`/user/${id}`);
   },
+
+  async updateUser(
+    id: string,
+    userData: Partial<UserByIdResponse>
+  ): Promise<UserByIdResponse> {
+    const response = await $api.put<UserByIdResponse>(`/user/${id}`, userData);
+    return response.data;
+  },
 });
