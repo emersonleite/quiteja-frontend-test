@@ -59,7 +59,7 @@ Nesse projeto, você devera desenvolver uma aplicação consumindo uma Api exter
 
 Ao terminar o projeto, você pode enviar o link do seu repositório (Deixar o mesmo publico) e se tiver alcançado a meta de realizar o deploy, mandar o link junto ao responsável.
 
-### Modificações realizadas e descrição do sistem
+### Modificações realizadas e descrição do sistema
 
 1. **Atualização para Vue 3**  
    Optou-se por utilizar o Vue 3 e seu ecossistema principal, substituindo o Vue 2, que não recebe suporte desde 2023. O Vue 3 oferece suporte nativo ao TypeScript, permitindo maior segurança e eficiência no desenvolvimento. Além disso, a _Composition API_ possibilita uma melhor organização do código e maior flexibilidade na construção de componentes.
