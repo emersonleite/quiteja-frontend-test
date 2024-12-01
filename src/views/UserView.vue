@@ -113,10 +113,10 @@ const page = computed({
   },
 });
 
-const LIMIT = 5000;
-
 const timeoutHasBeenReached = computed(() => {
-  return new Date().getTime() - useCache.time > LIMIT;
+  return (
+    new Date().getTime() - useCache.time > process.env.VUE_APP_CACHE_TIME_LIMIT
+  );
 });
 
 onMounted(async () => {
