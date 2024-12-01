@@ -20,7 +20,12 @@
       <v-list>
         <v-list-item>
           <template #title>
-            <span class="cursor-pointer"> Usuários </span>
+            <router-link
+              class="text-decoration-none text-h6 color-white"
+              :to="{ name: 'users' }"
+            >
+              <span style="color: aliceblue">Usuários</span>
+            </router-link>
           </template>
           <template #prepend><v-icon>mdi-account-outline</v-icon></template>
         </v-list-item>
