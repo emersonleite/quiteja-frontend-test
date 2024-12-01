@@ -2,8 +2,14 @@ import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
 import UserView from "../views/UserView.vue";
 import UserByIdView from "@/views/UserByIdView.vue";
 import UserEditView from "@/views/UserEditView.vue";
+import HomeView from "@/views/HomeView.vue";
 
 const routes: Array<RouteRecordRaw> = [
+  {
+    path: "/",
+    name: "home",
+    component: HomeView,
+  },
   {
     path: "/user",
     name: "users",
