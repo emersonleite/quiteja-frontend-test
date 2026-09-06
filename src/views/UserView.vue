@@ -77,7 +77,7 @@
 </template>
 
 <script setup lang="ts">
-import { computed, onMounted, ref, watch } from "vue";
+import { computed, onMounted, ref } from "vue";
 import api from "../services/repository";
 import { User } from "@/types/user";
 import { mapTitle } from "@/utils";
@@ -126,10 +126,6 @@ onMounted(async () => {
   }
   users.value = useCache.users;
   total.value = useCache.totalItems;
-});
-
-watch(page, () => {
-  getAllUsers();
 });
 
 const paginationLength = computed(() => {
